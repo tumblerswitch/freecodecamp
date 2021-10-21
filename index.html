@@ -5,37 +5,142 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Danya</title>
+    <title>Tost for real men</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <main id="main">
-    <h1 id="title">Пользовательские истории Дани:</h1>
-    <p>Человек который шутит?</p>
+    <header class="header">
+        <h1 id="title">Форма для настоящих мужчин</h1>
+        <p id="description">Заполните форму, а мы проверим настоящий ли вы мужчина или латентный гей.</p>
+    </header>
 
-    <div id="img-div">
-        <img class="responsive" src="https://www.kino-teatr.ru/acter/photo/2/9/523692/1145001.jpg" alt="" id="image">
-        <figcaption id="img-caption"><em>Sir Danya.P official photo</em></figcaption>
-    </div>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Как тебя зовут твои кореша?</label>
+            <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Введите свое мужицкое имя"
+                    required
+            />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">"Электронная почта</label>
+            <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Введи сюда свое мыло. Хорошо что его нельзя уронить, правда? Или нет?"
+                    required
+            />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number"
+            >Введи возраст когда стал настоящим мужиком<span class="clue">(опционально)</span></label
+            >
+            <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="вводи, только если стал"
+            />
+        </div>
+        <div class="form-group">
+            <p>Какой вариант лучше всего описывает вашу текущую роль?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Выбери текущую роль</option>
+                <option value="active">Актив</option>
+                <option value="passive">Пассив</option>
+                <option value="both">Оба</option>
+                <option value="notdecided">Еще не определился</option>
+                <option value="other">Другое</option>
+            </select>
+        </div>
 
+        <div class="form-group">
+            <p>Нравится ли вам стать мужчин в форме?</p>
+            <label>
+                <input
+                        name="do-you-like-mens-close"
+                        value="yes-police"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                />Да, только если она полицейская</label
+            >
+            <label>
+                <input
+                        name="do-you-like-mens-close"
+                        value="yes-any"
+                        type="radio"
+                        class="input-radio"
+                />Да, любая</label
+            >
+            <label
+            ><input
+                    name="do-you-like-mens-close"
+                    value="no-without"
+                    type="radio"
+                    class="input-radio"
+            />НЕТ! Без формы лучше ;)</label
+            >
+        </div>
 
-    <section id="tribute-info">
+        <div class="form-group">
+            <p>
+                Что вам нравится больше?
+                <span class="clue">(Отметь все что подходит)</span>
+            </p>
 
-        <h3 id="headline">Жизнь знаменитого Даньки:</h3>
+            <label>
+                <input
+                        name="prefer"
+                        value="sausages-thin"
+                        type="checkbox"
+                        class="input-checkbox"
+                />Сосиски</label
+            >
+            <label
+            ><input
+                    name="prefer"
+                    value="sausages-fat"
+                    type="checkbox"
+                    class="input-checkbox"
+            />Сардельки</label
+            >
+            <label
+            ><input
+                    name="prefer"
+                    value="sausages-wery-fat"
+                    type="checkbox"
+                    class="input-checkbox"
+            />Колбаса</label
+            >
+        </div>
 
-        <ul>
-            <li><strong>1994</strong> - Родился в Воронеже</li>
-            <li>
-                <strong>с 2012 по текущее время </strong> - Шутит.
-            </li>
-            <li>
-                <strong>2021</strong> - Еще жив.
-            </li>
-        </ul>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
 
-        <p> Истори Дани гласит что он <s>смешно</s> шутит, убедитесь в этом сами,
-            <a id="tribute-link" href="https://www.youtube.com/c/Spoontamer" target="_blank">устройте рандеву с его
-                творчеством.</a>
-        </p>
-    </section>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+    </form>
+
 </main>
 </html>

@@ -1,5 +1,7 @@
+
 body {
     font-family: Arial, sans-serif;
+    /*font-weight: 400;*/
     text-align: center;
     margin: 0;
 }
@@ -15,14 +17,4 @@ img {
     padding: 15px;
     border-radius: 5px;
     background: #eee;
-}
-ul {
-    max-width: 550px;
-    margin: 0 auto 50px auto;
-    text-align: left;
-    line-height: 1.6;
-}
-
-li {
-    margin: 16px 0;
 }
