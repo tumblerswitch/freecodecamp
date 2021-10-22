@@ -14,7 +14,7 @@
         <p id="description">Заполните форму, а мы проверим настоящий ли вы мужчина или латентный гей.</p>
     </header>
 
-    <form id="survey-form">
+    <form id="survey-form" onsubmit="myFunction()">
         <div class="form-group">
             <label id="name-label" for="name">Как тебя зовут твои кореша?</label>
             <input
@@ -27,7 +27,7 @@
             />
         </div>
         <div class="form-group">
-            <label id="email-label" for="email">"Электронная почта</label>
+            <label id="email-label" for="email">Электронная почта</label>
             <input
                     type="email"
                     name="email"
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <label id="number-label" for="number"
-            >Введи возраст когда стал настоящим мужиком<span class="clue">(опционально)</span></label
+            >Введи возраст когда стал настоящим мужиком<span>(опционально)</span></label
             >
             <input
                     type="number"
@@ -125,12 +125,12 @@
         </div>
 
         <div class="form-group">
-            <p>Any comments or suggestions?</p>
+            <p>Есть предпочтения?</p>
             <textarea
                     id="comments"
                     class="input-textarea"
                     name="comment"
-                    placeholder="Enter your comment here..."
+                    placeholder="Или может потаенные желания..."
             ></textarea>
         </div>
 
@@ -139,8 +139,7 @@
                 Submit
             </button>
         </div>
-
     </form>
-
 </main>
+<script src="main.js"></script>
 </html>
